@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import './App.css'; // Import external CSS
 
 const App = () => {
@@ -179,7 +179,7 @@ const App = () => {
                             <div className="cut"></div>
                             <label htmlFor="image" className="placeholder">Image URL</label>
                         </div>
-                        
+
                         <div className="checkbox-wrapper-4">
                             <input
                                 className="inp-cbx"

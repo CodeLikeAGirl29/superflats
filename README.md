@@ -1,6 +1,8 @@
 # SuperFlats
 
-SuperFlats is a responsive React application designed to manage and display a list of apartments dynamically. It allows users to view detailed information about available flats and add new flats through an intuitive form interface. The project demonstrates core React concepts, including state management, conditional rendering, and form handling, alongside responsive design principles for a clean and user-friendly experience.
+[SuperFlats](https://superflatsproject.vercel.app/) is a responsive React application designed to manage and display a list of apartments dynamically. It allows users to view detailed information about available flats and add new flats through an intuitive form interface. The project demonstrates core React concepts, including state management, conditional rendering, and form handling, alongside responsive design principles for a clean and user-friendly experience.
+
+[![CodeFactor](https://www.codefactor.io/repository/github/codelikeagirl29/superflats/badge)](https://www.codefactor.io/repository/github/codelikeagirl29/superflats)
 
 ---
 
