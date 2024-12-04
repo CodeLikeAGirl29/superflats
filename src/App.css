@@ -11,13 +11,44 @@ body {
   min-height: 100vh;
 }
 
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
 .form {
+  z-index: 10;
+  /* Ensures form is above all other elements when displayed */
+}
+
+.flats-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  padding: 20px;
+  z-index: 1;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   background-color: #15172b;
   border-radius: 20px;
   box-sizing: border-box;
   height: auto;
   padding: 20px;
   width: 350px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 .title {
@@ -362,4 +393,56 @@ ul li img {
   50% {
     transform: scale(0.9);
   }
+}
+
+/* Container for all flats */
+.flats-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  padding: 20px;
+}
+
+/* Individual flat card */
+.flat-card {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  background-color: #f8f9fa;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  max-width: 400px;
+  width: 100%;
+  overflow: hidden;
+}
+
+/* Image inside the card */
+.flat-image {
+  width: 150px;
+  height: auto;
+  object-fit: cover;
+  border-right: 1px solid #ddd;
+}
+
+/* Details section of the card */
+.flat-details {
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+/* Headings and text styling */
+.flat-details h3 {
+  margin: 0 0 10px;
+  font-size: 1.5rem;
+  color: #333;
+}
+
+.flat-details p {
+  margin: 5px 0;
+  font-size: 1rem;
+  color: #555;
 }

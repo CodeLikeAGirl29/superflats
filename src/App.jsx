@@ -204,29 +204,31 @@ const App = () => {
                             </svg>
                         </div>
 
-
                         <button type="submit" className="submit" onClick={handleAddFlat}>
                             Add Flat
                         </button>
                     </div>
                 ) : (
-                    <button id="addFlatButton" onClick={toggleForm}>
-                        Add Flat
-                    </button>
+                    <>
+                        <button id="addFlatButton" onClick={toggleForm}>
+                            Add Flat
+                        </button>
+                        <h2>Apartment Homes</h2>
+                        <ul className="flats-container">
+                            {flats.map((flat) => (
+                                <li key={flat.id} className="flat-card">
+                                    <img src={flat.image} alt={flat.name} className="flat-image" />
+                                    <div className="flat-details">
+                                        <h3>{flat.name}</h3>
+                                        <p>Location: {flat.location}</p>
+                                        <p>Price: {flat.price}</p>
+                                        <p>Availability: {flat.available ? 'Available' : 'Not Available'}</p>
+                                    </div>
+                                </li>
+                            ))}
+                        </ul>
+                    </>
                 )}
-
-                <h2>Apartment Homes</h2>
-                <ul>
-                    {flats.map((flat) => (
-                        <li key={flat.id}>
-                            <h3>{flat.name}</h3>
-                            <p>Location: {flat.location}</p>
-                            <p>Price: {flat.price}</p>
-                            <p>Availability: {flat.available ? 'Available' : 'Not Available'}</p>
-                            <img src={flat.image} alt={flat.name} />
-                        </li>
-                    ))}
-                </ul>
             </main>
         </div>
     );
